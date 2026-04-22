@@ -1,3 +1,5 @@
+import {TotalUsersCard} from "../components/cards/TotalUserCard.tsx";
+
 interface HomeProps {
     name: string;
 }
@@ -18,7 +20,9 @@ export function Home({name}: HomeProps) {
                     })}</h1>
                 </div>
             </header>
-
+            <div className="stats-grid">
+                <TotalUsersCard/>
+            </div>
         </>
     )
 }

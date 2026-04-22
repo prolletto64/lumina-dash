@@ -19,3 +19,39 @@
 .header {
     @apply flex flex-row justify-between min-w-full;
 }
+
+.stats-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8;
+}
+
+.stat-card {
+    @apply p-5 rounded-xl shadow-sm text-white;
+}
+
+.stat-card-header {
+    @apply flex items-center justify-between;
+}
+
+.stat-card-header span:first-child {
+    @apply text-sm font-medium opacity-90;
+}
+
+.stat-card-value {
+    @apply text-3xl font-bold mt-3;
+}
+
+.stat-card-blue {
+    @apply bg-linear-to-br from-blue-500 to-blue-600;
+}
+
+.stat-card-green {
+    @apply bg-linear-to-br from-emerald-500 to-emerald-600;
+}
+
+.stat-card-purple {
+    @apply bg-linear-to-br from-purple-500 to-purple-600;
+}
+
+.stat-card-amber {
+    @apply bg-linear-to-br from-amber-500 to-amber-600;
+}
