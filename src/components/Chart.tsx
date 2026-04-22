@@ -16,7 +16,7 @@ export type ChartType = 'bar' | 'line' | 'area';
 
 interface ChartProps {
     title: string;
-    data: Array<Record<string, number>>;
+    data: Array<{ [key: string]: unknown }>;
     xKey: string;
     yKey: string;
     color?: string;
