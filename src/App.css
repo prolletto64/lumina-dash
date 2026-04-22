@@ -25,7 +25,8 @@
 }
 
 .stat-card {
-    @apply p-5 rounded-xl shadow-sm text-white;
+    @apply p-5 rounded-xl shadow-sm text-black;
+    @apply bg-linear-to-br from-gray-100 to-gray-200;
 }
 
 .stat-card-header {
@@ -41,17 +42,21 @@
 }
 
 .stat-card-blue {
+    @apply p-5 rounded-xl shadow-sm text-white;
     @apply bg-linear-to-br from-blue-500 to-blue-600;
 }
 
 .stat-card-green {
+    @apply p-5 rounded-xl shadow-sm text-white;
     @apply bg-linear-to-br from-emerald-500 to-emerald-600;
 }
 
 .stat-card-purple {
+    @apply p-5 rounded-xl shadow-sm text-white;
     @apply bg-linear-to-br from-purple-500 to-purple-600;
 }
 
 .stat-card-amber {
+    @apply p-5 rounded-xl shadow-sm text-white;
     @apply bg-linear-to-br from-amber-500 to-amber-600;
 }

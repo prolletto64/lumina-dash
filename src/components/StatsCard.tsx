@@ -2,7 +2,7 @@ interface StatCardProps {
     title: string;
     value: string | number;
     icon?: string;
-    color: 'blue' | 'green' | 'purple' | 'amber';
+    color?: 'blue' | 'green' | 'purple' | 'amber';
 }
 
 const colorClasses = {
@@ -14,7 +14,7 @@ const colorClasses = {
 
 export function StatsCard({title, value, icon, color}: StatCardProps) {
     return (
-        <div className={`stat-card ${colorClasses[color]}`}>
+        <div className={`stat-card ${color && colorClasses[color]}`}>
             <div className="stat-card-header">
                 <span>{title}</span>
                 {icon && (<span>{icon}</span>)}
