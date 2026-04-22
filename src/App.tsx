@@ -1,5 +1,6 @@
 import './App.css'
 import {useEffect, useState} from "react";
+import {Home} from './views/Home.tsx'
 
 function App() {
     const [name, setName] = useState('')
@@ -26,10 +27,7 @@ function App() {
     return (
         <div className="dashboard">
             {isLoading && <div className="centered-text"><p className="text-primary">LumaDash is loading...</p></div>}
-            {!isLoading && <div>
-                <h1 className="title">Luma Dashboard</h1>
-                <p className="text-primary">Welcome, {name}</p>
-            </div>}
+            {!isLoading && <Home name={name}/>}
         </div>
     )
 }
