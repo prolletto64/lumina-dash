@@ -92,3 +92,11 @@
 .section {
     @apply bg-white rounded-xl shadow-sm p-6 border border-gray-100 mb-8;
 }
+
+.chart-title {
+    @apply text-lg font-semibold text-gray-800 mb-4;
+}
+
+.chart-wrapper {
+    @apply h-64 w-full;
+}
