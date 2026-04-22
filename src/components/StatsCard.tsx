@@ -3,6 +3,7 @@ interface StatCardProps {
     value: string | number;
     icon?: string;
     color?: 'blue' | 'green' | 'purple' | 'amber';
+    size?: number;
 }
 
 const colorClasses = {
@@ -12,9 +13,9 @@ const colorClasses = {
     amber: 'stat-card-amber',
 };
 
-export function StatsCard({title, value, icon, color}: StatCardProps) {
+export function StatsCard({title, value, icon, color, size = 1}: StatCardProps) {
     return (
-        <div className={`stat-card ${color && colorClasses[color]}`}>
+        <div className={`stat-card ${color && colorClasses[color]} stat-card-size-${size}`}>
             <div className="stat-card-header">
                 <span>{title}</span>
                 {icon && (<span>{icon}</span>)}

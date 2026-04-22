@@ -60,3 +60,11 @@
     @apply p-5 rounded-xl shadow-sm text-white;
     @apply bg-linear-to-br from-amber-500 to-amber-600;
 }
+
+.stat-card-size-2 {
+    @apply lg:col-span-2 lg:row-span-2;
+}
+
+.stat-card-size-3 {
+    @apply lg:col-span-3 lg:row-span-3;
+}

@@ -1,6 +1,8 @@
 import {TotalUsersCard} from "../components/cards/TotalUserCard.tsx";
 import {RevenueCard} from "../components/cards/RevenueCard.tsx";
 import {ActiveUsersCard} from "../components/cards/ActiveUserCard.tsx";
+import {ConversionRateCard} from "../components/cards/ConversionRateCard.tsx";
+import {MonthlyGoalCard} from "../components/cards/MonthlyGoalCard.tsx";
 
 interface HomeProps {
     name: string;
@@ -25,7 +27,9 @@ export function Home({name}: HomeProps) {
             <div className="stats-grid">
                 <TotalUsersCard/>
                 <RevenueCard/>
+                <MonthlyGoalCard/>
                 <ActiveUsersCard/>
+                <ConversionRateCard/>
             </div>
         </>
     )
