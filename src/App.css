@@ -62,7 +62,7 @@
 }
 
 .stat-card-size-2 {
-    @apply lg:col-span-2 lg:row-span-2;
+    @apply sm:col-span-2 sm:row-span-2;
 }
 
 .stat-card-size-3 {
